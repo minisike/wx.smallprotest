@@ -1,0 +1,73 @@
+<!--pages/post/post.wxml-->
+<!--one1-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true" vertical="{{flase}}">
+    <swiper-item>
+      <image src="/images/post/post-1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="post-container">
+  <view class="post-author-date">
+    <image src="{{bindchangedata.avatar}}"></image>
+    <text>{{bindchangedata.object.date}}</text>
+  </view>
+  <text class="post-title">{{bindchangedata.title}}</text>
+  <image class="post-image" src="{{bindchangedata.postImg}}" mode="aspectFill"></image>
+  <text class="post-content">{{bindchangedata.content}}</text>
+  <view class="post-like">
+  <image src="/images/icon/wx_app_collect.png"></image>
+  <text>{{bindchangedata.collectionNum.array[0]}}</text>
+  <image src="/images/icon/wx_app_view.png"></image>
+  <text>{{bindchangedata.readingNum}}</text>
+  <image src="/images/icon/wx_app_message.png"></image>
+  <text>{{bindchangedata.commentNum}}</text>
+  </view>
+</view>
+<!--one1-->
+
+<!--one2-->
+<view class="post-container">
+  <view class="post-author-date">
+    <image src="/images/avatar/avatar-2.png"></image>
+    <text>March 1 2023</text>
+  </view>
+  <text class="post-title">边塞诗派</text>
+  <image class="post-image" src="/images/post/post-5.jpg" mode="aspectFill"></image>
+  <text class="post-content">特点： 描写战争与战场，表现保家卫国的英勇精神，或描写雄浑壮美的边塞风光，奇异的风土人情，又或描写战争的残酷，军中的黑暗，征戍的艰辛，表达民族和睦的向往与情怀。</text>
+  <view class="post-like">
+  <image src="/images/icon/wx_app_collect.png"></image>
+  <text>108</text>
+  <image src="/images/icon/wx_app_view.png"></image>
+  <text>92</text>
+  <image src="/images/icon/wx_app_message.png"></image>
+  <text>7</text>
+  </view>
+</view>
+<!--one2-->
+
+<!--one3-->
+<view class="post-container">
+  <view class="post-author-date">
+    <image src="/images/avatar/avatar-1.png"></image>
+    <text>March 1 2023</text>
+  </view>
+  <text class="post-title">浪漫诗派</text>
+  <image class="post-image" src="/images/post/post-2.jpg" mode="aspectFill"></image>
+  <text class="post-content">特点： 以抒发个人情怀为中心，咏唱对自由人生个人价值的渴望与追求。诗词自由、奔放、顺畅、想象丰富、气势宏大。语言主张自然，反对雕琢。</text>
+  <view class="post-like">
+  <image src="/images/icon/wx_app_collect.png"></image>
+  <text>108</text>
+  <image src="/images/icon/wx_app_view.png"></image>
+  <text>92</text>
+  <image src="/images/icon/wx_app_message.png"></image>
+  <text>7</text>
+  </view>
+</view>
+<!--one3-->
